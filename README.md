@@ -1,1 +1,1 @@
-Simply paste any png image you want to convert into the input folder and run the program, the output will be pasted in the terminal.
+Simply paste any png image you want to convert into the input folder and run the program, the output will be pasted in the terminal. You can do multiple images at once, the outputs will be pasted underneath eachother.
