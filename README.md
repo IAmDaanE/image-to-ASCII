@@ -26,13 +26,14 @@ Requirements: You must have Python 3.10 or higher.
     pip install -r requirements.txt
     ```
 4. Run the program.
+
     ```
-    python ASCII_generator.py
+    python image_to_ascii.py "images/cat.png"
     ```
 
 ### Usage
 
-Place the images you want to convert inside the input folder and run the program. In the terminal where you started it the ascii characters will be printed, ready to be copy pasted for another use. Multiple images at a time work just fine, they will be placed underneath eachother. You might need to zoom out the terminal to properly see the image by pressing ctrl - repeatedly.
+Run the program with the command shown above and replace the string with the file path to your image. You might need to zoom out the terminal to properly see the image by pressing ctrl - repeatedly.
 
 ## License
 

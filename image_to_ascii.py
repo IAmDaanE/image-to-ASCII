@@ -1,8 +1,21 @@
 from PIL import Image
 from pathlib import Path
 import math
+import argparse
 
-input_folder = Path("input")
+parser = argparse.ArgumentParser(
+        description="Convert any image into characters in the terminal."
+    )
+
+parser.add_index = parser.add_argument(
+        "image_path", 
+        type=str, 
+        help="The path to the image file (e.g., images/cat.png)"
+    )
+
+args = parser.parse_args()
+image_path = args.image_path
+
 normal_images = []
 resized_images = []
 grey_images = []
@@ -12,8 +25,7 @@ image_height = 100
 chars = """ .:-=+*#%@"""
 #chars = """.'`^",;:Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MWM&%8@$"""
 
-for image in input_folder.glob("*.png"):
-    normal_images.append(Image.open(image))
+normal_images.append(Image.open(image_path))
 
 for image in normal_images:
     aspect_ratio = image.width / image.height
@@ -41,4 +53,3 @@ for image in quantized_images:
     for line in lines:
         print(line)
     print("")
-#python ASCII_generator.py
