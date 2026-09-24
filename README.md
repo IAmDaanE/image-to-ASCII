@@ -8,27 +8,18 @@ Turn any png image into an array of characters that looks just like it. Perfect 
 
 ## Getting Started
 
-### Getting the Source
-
-This project is [hosted on GitHub](https://github.com/IAmDaanE/image-to-ASCII). You can download the zip or clone this project directly using this command:
-
-```
-git clone git@github.com:IAmDaanE/image-to-ASCII.git
-```
-
 ### Running the Program
 
-Requirements: You must have Python 3.10 or higher.
-1. Clone the repository.
-2. In the terminal, navigate to the directory where the repository was cloned.
-3. In a venv or the global python version install the needed libraries.
+**Requires:** Python 3.9 - 3.14
+1. Install the required libraries, preferably in a venv.
+
     ```
     pip install -r requirements.txt
     ```
-4. Run the program.
+2. Run the program.
 
     ```
-    python image_to_ascii.py "images/cat.png"
+    python src/main.py
     ```
 
 ### Usage
